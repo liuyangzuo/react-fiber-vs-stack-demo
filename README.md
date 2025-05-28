@@ -6,7 +6,7 @@ Originally created by Claudio Procida, this version may include modifications or
 
 ## Original Source
 
-Based on the original [React Fiber vs Stack Demo](https://github.com/cprocid/react-fiber-vs-stack) by Claudio Procida.
+Based on the original [React Fiber vs Stack Demo](https://github.com/claudiopro/react-fiber-vs-stack-demo) by Claudio Procida.
 
 ## License
 
