@@ -1,14 +1,21 @@
-# React Fiber vs Stack Demo
+# React Fiber vs Stack – Custom Version
 
-This demo shows the differences between Stack and Fiber by rendering a Sierpinski triangle that constantly shrinks and grows, and whose nodes have a value that increments by one every second.
+This is a customized version of the original React Fiber vs Stack demo.
 
-Used as a demo during the ReactJS Dublin Lightning Talks meetup of February 22nd 2017.
+Originally created by Claudio Procida, this version may include modifications or adjustments based on the original source.
+
+## Original Source
+
+Based on the original [React Fiber vs Stack Demo](https://github.com/cprocid/react-fiber-vs-stack) by Claudio Procida.
 
 ## License
 
 [MIT](https://opensource.org/licenses/MIT)
 
-Copyright (c) 2017 Claudio Procida
+This project includes code originally written by:
 
-React and Fiber example Copyright (c) 2013-present, Facebook, Inc.
-All rights reserved.
+- **Claudio Procida** © 2017  
+- **Facebook, Inc.** © 2013–present
+
+All rights reserved by the respective authors.  
+Modifications made in this version are also released under the MIT License.
