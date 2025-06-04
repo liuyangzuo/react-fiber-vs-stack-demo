@@ -1,0 +1,29 @@
+{
+  "name": "stack",
+  "projectType": "application",
+  "root": "apps/stack-app",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vite build",
+        "cwd": "apps/stack-app"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vite",
+        "cwd": "apps/stack-app"
+      }
+    },
+    "preview": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vite preview",
+        "cwd": "apps/stack-app"
+      },
+      "dependsOn": ["build"]
+    }
+  }
+}
