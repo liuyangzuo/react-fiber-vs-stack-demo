@@ -6,12 +6,12 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        stack: './stack.html',
+        stack: './index.html',
       },
     },
   },
   server: {
-    open: '/stack.html',
+    open: '/index.html',
     port: 4202,
   },
 })

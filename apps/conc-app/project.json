@@ -1,0 +1,29 @@
+{
+  "name": "conc",
+  "projectType": "application",
+  "root": "apps/conc-app",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vite build",
+        "cwd": "apps/conc-app"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vite",
+        "cwd": "apps/conc-app"
+      }
+    },
+    "preview": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vite preview",
+        "cwd": "apps/conc-app"
+      },
+      "dependsOn": ["build"]
+    }
+  }
+}

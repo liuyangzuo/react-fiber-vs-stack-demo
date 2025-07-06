@@ -1,0 +1,26 @@
+.container {
+  position: absolute;
+  transform-origin: 0 0;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  background: #eee;
+}
+
+@keyframes pulseTransform {
+  0% {
+    transform: scaleX(0.476) scaleY(0.7) translateZ(0.1px);
+  }
+  50% {
+    transform: scaleX(0.714) scaleY(0.7) translateZ(0.1px); /* 1.5 / 2.1 = 0.714 */
+  }
+  100% {
+    transform: scaleX(0.476) scaleY(0.7) translateZ(0.1px);
+  }
+}
+
+.container {
+  animation: pulseTransform 10s infinite ease-in-out;
+  will-change: transform;
+}

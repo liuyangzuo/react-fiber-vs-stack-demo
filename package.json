@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "concurrently \"nx serve fiber --no-open\" \"nx serve stack --no-open\" \"nx serve shell --open\""
+    "dev": "concurrently \"nx serve fiber --no-open\" \"nx serve stack --no-open\" \"nx serve conc --no-open\" \"nx serve shell --open\""
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",

@@ -2,22 +2,16 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/fiber/',
-  resolve: {
-    alias: {
-      react: '/src/shims/react-custom.js',
-      'react-dom': '/src/shims/react-dom-custom.js',
-    }
-  },
+  base: '/conc/',
   build: {
     rollupOptions: {
       input: {
-        fiber: './index.html',
+        conc: './index.html',
       },
     },
   },
   server: {
     open: '/index.html',
-    port: 4201,
+    port: 4203,
   },
 })

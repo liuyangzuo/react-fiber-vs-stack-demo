@@ -1,7 +1,8 @@
 {
     "projects": {
     "fiber": "apps/fiber-app",
-    "stack": "apps/stack-app"
+    "stack": "apps/stack-app",
+    "conc": "apps/conc-app"
   },
   "installation": {
     "version": "21.1.2"
