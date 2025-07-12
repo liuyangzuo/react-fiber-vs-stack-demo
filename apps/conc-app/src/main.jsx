@@ -1,12 +1,42 @@
 import './stack.css'
 import App from './App.jsx'
-import React, {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom/client';
+import { useEffect, useRef } from 'react';
 
-
-var start = new Date().getTime();
 const container = document.getElementById('container');
 const root = ReactDOM.createRoot(container);
 
+const animation = (time) => {
+  const t = (time / 1000) % 10;
+  const scale = 1 + (t > 5 ? 10 - t : t) / 10;
+  return { transform: `scaleX(${scale / 2.1}) scaleY(0.7) translateZ(0.1px)` };
+}
 
-root.render(<App elapsed={new Date().getTime() - start} />);
+const AnimatedApp = () => {
+
+  let elementRef = useRef(null);
+
+  useEffect(() => {
+    if (elementRef.current) {
+      let animationFrameId;
+
+      const Update = (elapsed) => {
+        if (elementRef.current) {
+          const { transform } = animation(elapsed);
+          elementRef.current.style.transform = transform;
+        }
+        animationFrameId = requestAnimationFrame(Update);
+      };
+      // Initiate the first requestAnimationFrame
+      // Store the frameId for future cancellation
+      animationFrameId = requestAnimationFrame(Update);
+
+      return () => cancelAnimationFrame(animationFrameId);
+    }
+  }, []);
+
+  return <App ref={elementRef} />
+}
+
+root.render(<AnimatedApp />);
+
