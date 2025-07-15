@@ -9,6 +9,8 @@ export default defineConfig({
         stack: './index.html',
       },
     },
+    outDir: '../../dist/stack', // shared folder!
+    emptyOutDir: false, // don't wipe out shared folder
   },
   server: {
     open: '/index.html',

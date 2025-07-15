@@ -10,6 +10,8 @@ export default defineConfig({
         conc: './index.html',
       },
     },
+    outDir: '../../dist/conc', // shared folder!
+    emptyOutDir: false, // don't wipe out shared folder
   },
   server: {
     open: '/index.html',

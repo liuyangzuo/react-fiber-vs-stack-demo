@@ -3,6 +3,10 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
+  build:{
+    outDir: '../../dist', // shared folder!
+    emptyOutDir: false, // don't wipe out shared folder
+  },
   server: {
     port: 4200,
     proxy: {
