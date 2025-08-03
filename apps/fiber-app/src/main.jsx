@@ -3,6 +3,8 @@ import App from './App.jsx'
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+console.log('React', React);
+console.log('ReactDOM', ReactDOM);
 
 var start = new Date().getTime();
 const container = document.getElementById('container');
