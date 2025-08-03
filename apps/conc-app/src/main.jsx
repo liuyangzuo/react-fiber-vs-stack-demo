@@ -1,8 +1,8 @@
 import './stack.css'
 import App from './App.jsx'
 import ReactDOM from 'react-dom/client';
-import { useEffect, useRef } from 'react';
-
+import React, { useEffect, useRef } from 'react';
+console.log('React', React);
 const container = document.getElementById('container');
 const root = ReactDOM.createRoot(container);
 
